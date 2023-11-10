@@ -21,7 +21,7 @@ public class Demo {
         LocalDateTime now = LocalDateTime.now();
         List<URLNode> urlNodes = IntStream.rangeClosed(1, 10)
                 .mapToObj(idx -> URLNode.builder()
-                        .loc("https://www.hsuyeung.com/article/link" + 1)
+                        .loc("https://www.hsuyeung.com/article/link" + idx)
                         .lastMod(now)
                         .changeFreq(ChangeFreqEnum.WEEKLY)
                         .priority(0.85)
